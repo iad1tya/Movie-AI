@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Movie Recommender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">AI Movie Recommender</h1>
+            <p class="subtitle">Discover your next favorite movie!</p>
+        </header>
+        <main>
+            <section id="recommendedMovies" class="recommended-movies">
+                <h2>Popular Movies</h2>
+                <div class="movie-grid"></div>
+            </section>
+            <section class="recommender-form">
+                <h2>Get Personalized Recommendations</h2>
+                <form id="movieForm" class="movie-form">
+                    <div class="form-group">
+                        <label for="mood">Your Mood</label>
+                        <input type="text" id="mood" name="mood" required placeholder="e.g., happy, sad, excited">
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Preferred Genre</label>
+                        <input type="text" id="genre" name="genre" required placeholder="e.g., action, comedy, drama">
+                    </div>
+                    <div class="form-group">
+                        <label for="platform">Streaming Platform</label>
+                        <select id="platform" name="platform" required>
+                            <option value="">Select a platform</option>
+                            <option value="netflix">Netflix</option>
+                            <option value="amazon">Amazon Prime</option>
+                            <option value="hulu">Hulu</option>
+                            <option value="disney">Disney+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Get Recommendation</button>
+                </form>
+            </section>
+            <div id="loadingIndicator" class="loading-indicator hidden">
+                <div class="spinner"></div>
+                <p>Finding the perfect movie for you...</p>
+            </div>
+            <div id="recommendation" class="recommendation hidden">
+                <h2>Recommended Movie:</h2>
+                <div id="movieDetails" class="movie-details"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 AI Movie Recommender. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
