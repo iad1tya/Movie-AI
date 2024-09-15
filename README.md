@@ -36,8 +36,8 @@ Before you embark on your movie recommendation journey, ensure you have the foll
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ai-movie-recommender.git
-   cd ai-movie-recommender
+   git clone https://github.com/iad1tya/Movie-AI
+   cd Movie-AI
    ```
 
 2. Install the dependencies:
